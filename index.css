@@ -1,0 +1,180 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #141F4F;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Hero Section for Landing Page */
+.hero {
+  background: #141F4F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto 0 auto;
+  background: #E07000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #c05c00;
+}
+
+/* Features Section */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: white;
+  color: #141F4F;
+}
+
+.feature-card {
+  background: #141F4F;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.feature-card h3 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Privacy Policy Hero Section */
+.privacy-hero {
+  background: #141F4F;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.privacy-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Privacy Content Section */
+.privacy-content {
+  padding: 3rem 2rem;
+  background: #fff;
+  color: #141F4F;
+}
+
+/* Content Blocks inside Privacy Page */
+.content-block {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  padding: 2rem;
+  background: #141F4F;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.content-block h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.content-block p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.content-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-block li {
+  margin-bottom: 0.5rem;
+  background: #1e2a66;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Back Button on Privacy Page */
+.back-btn {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto 0 auto;
+  background: #E07000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background: #c05c00;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
